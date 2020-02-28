@@ -27,7 +27,7 @@ data class Wind(var speed:Double)
 
 data class Sys(var country:String)
 
-data class WeatherDetailsList(var list:WeatherDetailItem)
+data class WeatherDetailsList(var list:List<WeatherDetailItem>)
 
 data class WeatherDetailItem(var dt: Long,
                              var speed: String,

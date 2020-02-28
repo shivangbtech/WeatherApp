@@ -23,7 +23,7 @@ class WeatherRepositoryImpl : BaseRepositoryImpl(), WeatherRepository {
 
     override suspend fun getWeatherDetailList(zip: String): ResultState<WeatherDetailsList> {
         return try {
-            ResultState.Success(DataServiceFactory.weatherService.getWeatherDetailsList(zip, Config.APP_ID))
+            ResultState.Success(DataServiceFactory.weatherService.getWeatherDetailsList("https://samples.openweathermap.org/data/2.5/forecast/daily", zip, Config.APP_ID))
         } catch (e: Exception) {
             handleErrorReturn(e) as ResultState<WeatherDetailsList>
         }

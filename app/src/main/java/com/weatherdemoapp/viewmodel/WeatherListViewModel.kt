@@ -46,7 +46,7 @@ class WeatherListViewModel : BaseViewModel() {
                         is ResultState.Success -> {
                             showError.set(false)
                             showLoading(false)
-                            weatherDetailsItems.addAll(listOf(it.data.list))
+                            weatherDetailsItems.addAll(it.data.list)
                         }
                         is ResultState.Error -> {
                             error.set(it.errorResponse.errorMessage)
