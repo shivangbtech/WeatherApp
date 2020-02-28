@@ -52,16 +52,8 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:text="@{`Humidity: ` + item.humidity}"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_user_id" />
+                app:layout_constraintTop_toBottomOf="@id/tv_user_id_value" />
 
-            <TextView
-                style="@style/SubHeaderBold"
-                android:id="@+id/tv_completed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/completed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf = "@id/tv_title"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

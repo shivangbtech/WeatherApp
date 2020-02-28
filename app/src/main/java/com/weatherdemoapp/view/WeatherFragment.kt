@@ -57,7 +57,7 @@ class WeatherFragment : BaseFragment<FragmentWeatherBinding, WeatherViewModel>()
                         activity as AppCompatActivity,
                         WeatherListFragment(),
                         R.id.fl_container_todo,
-                        false,
+                        true,
                         TransitionManager.TransitionAnimation.TRANSITION_NONE
                     )
                 })
