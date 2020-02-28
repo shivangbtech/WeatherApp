@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherDemoApp</string>
+
+
+    <string name="user_id">"User Id = "</string>
+    <string name="completed">"Completed = "</string>
+    <string name="reload">RELOAD</string>
+    <string name="give_it_another_try">Give it another try</string>
+    <string name="degree_celsius">" &#xb0;C"</string>
+    <string name="enter_the_zip_code">Enter The Zip Code</string>
+    <string name="search">Search</string>
+    <string name="click_here_for_7_days_forecast"> <u>Click Here For 7 Days Forecast</u> </string>
+</resources>

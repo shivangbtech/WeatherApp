@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+       <variable
+            name="viewmodel"
+            type="com.weatherdemoapp.viewmodel.WeatherListViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_todo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemBinding="@{viewmodel.weatherDetailsItemBinding}"
+            app:items="@{viewmodel.weatherDetailsItems}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+       <!-- <include
+            android:id="@+id/layout_error"
+            layout="@layout/view_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{viewmodel.showError ? View.VISIBLE : View.GONE}"
+            app:viewModel="@{viewmodel}" />
+
+
+            android:visibility="@{viewmodel.showError ? View.GONE : View.VISIBLE}"
+            app:itemBinding="@{viewmodel.todoItemBinding}"
+            app:items="@{viewmodel.todoItems}"
+
+            -->
+
+    </FrameLayout>
+</layout>
